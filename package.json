@@ -1,0 +1,33 @@
+{ "name": "midi-instrument-names-tabulate-pmb",
+  "version": "1.0.0",
+  "description": "Make an overview table for your favorite MIDI patch set.",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/midi-instrument-names-tabulate-pmb-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/midi-instrument-names-tabulate-pmb-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/midi-instrument-names-tabulate-pmb-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "tbl.js",
+  "bin": "cli.js",
+  "scripts": { "test": "nodejs test/gen-gm1.js" },
+  "directories": { "test": "test" },
+
+  "dependencies": {
+  },
+  "devDependencies": {
+    "absdir": "^1.0.5",
+    "midi-instrument-names-gm1-pmb": "^1.0.4"
+  },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}

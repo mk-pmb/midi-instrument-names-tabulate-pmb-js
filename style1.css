@@ -1,0 +1,43 @@
+﻿@charset "UTF-8";
+/* -*- coding: UTF-8, tab-width: 2 -*- */
+
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+
+h2, ol, li { margin: 0; padding: 0; }
+ol { padding-left: 5ex; float: left; }
+ol + ol { margin-left: 2em; }
+
+chapter {
+  float: left;
+  width: 14em;
+  overflow: hidden;
+  margin-bottom: 1em;
+  margin-right: 2em;
+}
+
+chapter h2, chapter li span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+chapter h2 {
+  max-width: 100%;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+chapter.drums {
+  width: auto;
+  max-width: 100%;
+  border-top: 1px dashed gray;
+  margin-top: 1em;
+}
+chapter.drums h2 { padding-top: 1ex; }
+
+hr.unfloat { clear: both; background-color: transparent; border-width: 0; }
+
+
