@@ -25,6 +25,16 @@ $ grep title gm1.html
 $ wkhtmltopdf --orientation Landscape gm1.html gm1.pdf
 ```
 
+
+Security considerations
+-----------------------
+
+* The HTML generator does not escape any names in your patch set.
+  It's meant as a feature.
+  If you suspect your patch set data to abuse that freedom, defuse it.
+
+
+
 <!--#toc stop="scan" -->
 
 
