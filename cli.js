@@ -5,6 +5,8 @@
 
 var tabu = require('./tbl.js'), fs = require('fs');
 
+function throwIf(err) { if (err) { throw err; } }
+
 function cli(data, destFmt, destFile) {
   if (typeof data === 'string') { data = require(data); }
   var render = cli[destFmt], output;
@@ -12,7 +14,7 @@ function cli(data, destFmt, destFile) {
     throw new Error('Unsupported output format: ' + String(destFmt));
   }
   output = render(data);
-  if (destFile) { return fs.writeFile(destFile, output + '\n'); }
+  if (destFile) { return fs.writeFile(destFile, output + '\n', throwIf); }
   console.log(output);
 }
 
